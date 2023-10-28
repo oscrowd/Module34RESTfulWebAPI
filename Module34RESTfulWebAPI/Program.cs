@@ -3,7 +3,9 @@ using Microsoft.OpenApi.Models;
 using Module34RESTfulWebAPI;
 using Module34RESTfulWebAPI.Configuration;
 using Swashbuckle.Swagger.Application;
-
+using System.Reflection;
+using FluentValidation.Validators;
+using FluentValidation.AspNetCore;
 
 class Program
 {
@@ -31,6 +33,9 @@ class Program
                 Version = "v1"
             });
         });
+        // Подключаем валидацию
+        builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AddDeviceRequestValidator>());
+        
 
         // Подключаем автомаппинг
         var assembly = Assembly.GetAssembly(typeof(MappingProfile));
@@ -44,6 +49,7 @@ class Program
         app.UseAuthorization();
 
         app.MapControllers();
+        
 
         app.Run();
 
