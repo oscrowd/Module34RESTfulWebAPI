@@ -6,6 +6,7 @@ using Swashbuckle.Swagger.Application;
 using System.Reflection;
 using FluentValidation.Validators;
 using FluentValidation.AspNetCore;
+using Home
 
 class Program
 {

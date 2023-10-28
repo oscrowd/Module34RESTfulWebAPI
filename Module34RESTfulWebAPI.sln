@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module34RESTfulWebAPI", "Module34RESTfulWebAPI\Module34RESTfulWebAPI.csproj", "{2F4D4F18-1FA7-40EC-B0F4-BFD35CA36058}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeApi.Contracts", "Module34RESTfulWebAPI.Contracts\HomeApi.Contracts.csproj", "{1F7D00D6-DFB6-4D67-A808-F36CA76F4D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module34RESTfulWebAPI.Contracts", "Module34RESTfulWebAPI.Contracts\Module34RESTfulWebAPI.Contracts.csproj", "{1F7D00D6-DFB6-4D67-A808-F36CA76F4D8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
